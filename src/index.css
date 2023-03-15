@@ -1,24 +1,26 @@
-* {
-  margin: 0;
+html,
+body
+{
+  background-color: DarkGray;
+  height: 100%;
   padding: 0;
+  margin: 0;
 }
 
-html {
-  width: 100%;
-  height: 100%;
-}
 
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  background-color: #fff;
+  width: 100%;
   height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
   background-color: rgb(251, 105, 100);
   transition-property: background-color, color, border-color, opacity;
   transition-timing-function: ease-in-out;
@@ -98,4 +100,25 @@ svg {
   margin: 0;
   font-size: 18px;
   color: #fff;
+}
+
+@media screen and (max-width: 768px){
+
+  html,
+  body,
+  #root{
+    width: 100% !important;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #quote-box,
+  .buttons,
+  .container-info{
+    max-width: 300px;
+ 
+  }
+
+
 }
