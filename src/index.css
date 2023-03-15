@@ -1,6 +1,6 @@
 html,
 body {
-  background-color: DarkGray;
+  background-color: rgb(251, 105, 100);;
   height: 100%;
   padding: 0;
   margin: 0;
@@ -22,14 +22,14 @@ body {
   background-color: rgb(251, 105, 100);
   transition-property: background-color, color, border-color, opacity;
   transition-timing-function: ease-in-out;
-  transition-duration: 2s;
+  transition-duration: 4s;
 }
 
 .color-change {
   font-size: 12px;
   transition-property: background-color, color, border-color;
   transition-timing-function: ease-in-out;
-  transition-duration: 2s;
+  transition-duration: 4s;
 }
 
 #quote-box {
@@ -50,7 +50,7 @@ svg {
   color: rgb(251, 105, 100);
   transition-property: background-color, color, border-color, opacity;
   transition-timing-function: ease-in-out;
-  transition-duration: 2s;
+  transition-duration: 4s;
 }
 #text {
   font-size: 28px;
@@ -60,7 +60,7 @@ svg {
   color: rgb(251, 105, 100);
   transition-property: background-color, color, border-color, opacity;
   transition-timing-function: ease-in-out;
-  transition-duration: 2s;
+  transition-duration: 4s;
 }
 .container-info p {
   font-size: 16px;
@@ -92,7 +92,7 @@ svg {
   padding: 8px;
   transition-property: background-color, color, border-color;
   transition-timing-function: ease-in-out;
-  transition-duration: 2s;
+  transition-duration: 4s;
 }
 
 .btn svg {
@@ -120,12 +120,19 @@ svg {
   }
 }
 
-@media screen and (max-width: 638px) {
+@media screen and (max-width: 680px) {
   #quote-box,
   .buttons,
   .container-info {
     max-width: 400px;
     width: auto;
+  }
+
+  #text {
+    font-size: 22px;
+  }
+  #author {
+    font-size: 16px;
   }
 
   #quote-box {
@@ -138,11 +145,11 @@ svg {
   }
 }
 
-@media screen and (max-height: 350px) {
+@media screen and (max-height: 450px) {
   #quote-box,
   .buttons,
   .container-info {
-    max-height: 250px;
+    max-height: 370px;
     height: auto;
   }
 
@@ -163,3 +170,31 @@ svg {
     margin: 0;
   }
 }
+
+@media screen and (max-height: 300px) {
+  #quote-box,
+  .buttons,
+  .container-info {
+    max-height: 240px;
+    height: auto;
+  }
+
+  #quote-box {
+    padding: 10px 20px;
+  }
+
+  #text {
+    font-size: 16px;
+  }
+
+  #author {
+    font-size: 12px;
+    padding: 0;
+  }
+
+  blockquote {
+    padding: 0;
+    margin: 0;
+  }
+}
+
