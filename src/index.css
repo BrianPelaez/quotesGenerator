@@ -1,12 +1,10 @@
 html,
-body
-{
+body {
   background-color: DarkGray;
   height: 100%;
   padding: 0;
   margin: 0;
 }
-
 
 body {
   display: flex;
@@ -103,11 +101,10 @@ svg {
   color: #fff;
 }
 
-@media screen and (max-width: 768px){
-
+@media screen and (max-width: 768px) {
   html,
   body,
-  #root{
+  #root {
     width: 100%;
     height: 100%;
 
@@ -117,32 +114,52 @@ svg {
   }
   #quote-box,
   .buttons,
-  .container-info{
+  .container-info {
     max-width: 500px;
     width: auto;
   }
-
-
 }
 
-@media screen and (max-width: 638px){
-
-
+@media screen and (max-width: 638px) {
   #quote-box,
   .buttons,
-  .container-info{
+  .container-info {
     max-width: 400px;
     width: auto;
   }
 
-  #quote-box{
+  #quote-box {
     padding: 10px 20px;
   }
 
-  blockquote{
+  blockquote {
     padding: 0;
     margin: 0;
   }
+}
 
+@media screen and (max-height: 350px) {
+  #quote-box,
+  .buttons,
+  .container-info {
+    max-height: 250px;
+    height: auto;
+  }
 
+  #quote-box {
+    padding: 10px 20px;
+  }
+
+  #text {
+    font-size: 22px;
+  }
+
+  #author {
+    font-size: 16px;
+  }
+
+  blockquote {
+    padding: 0;
+    margin: 0;
+  }
 }
